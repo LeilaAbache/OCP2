@@ -1,9 +1,6 @@
 body {
     font-family: 'Raleway', sans-serif;
-    margin-right: 50px;
-    margin-left: 50px;
-    margin-top: 0px;
-    margin-bottom: 0px;
+    margin: 0 50px;
     max-width: 1400px;
 }
 
@@ -35,17 +32,15 @@ nav {
     margin-block-start: 0em;
 }
 
-.lien-hebergements {
-    border-top: 2px solid;
-    border-top-color:#ffffff;
+.lien-hebergements, .lien-activites {
+    border-top: 2px solid #ffffff;
     padding-top:60px;
     padding-left: 30px;
     padding-right: 30px;
 }
 
 .lien-hebergements:hover {
-    border-top: 2px solid;
-    border-top-color:#0065FC;
+    border-top: 2px solid #0065FC;
     padding-top: 60px;
 }
 
@@ -53,17 +48,8 @@ nav {
     color:#0065FC;
 }
 
-.lien-activites {
-    border-top: 2px solid;
-    border-top-color:#ffffff;
-    padding-top: 60px;
-    padding-left: 30px;
-    padding-right: 30px;
-}
-
 .lien-activites:hover {
-    border-top: 2px solid;
-    border-top-color:#0065FC;
+    border-top: 2px solid #0065FC;
     padding-top: 60px;
 }
 
@@ -410,7 +396,7 @@ h4 {
     border-radius: 20px;
 }
 .card-3 img {
-    width: 23%;
+    width: 100%;
     height: 389px;
     object-fit: cover;
     border-radius: 20px 20px 0px 0px;
@@ -568,6 +554,11 @@ footer {
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        padding-bottom: 0px;
+    }
+
+    nav img {
+        padding-bottom: 40px;
     }
 
     #logo {
@@ -585,39 +576,29 @@ footer {
         width: 50%;
         text-align: center;
         border-top: none;
-        padding-top: 0px;
-        padding-bottom: 30px;
-        padding-left: 30px;
-        padding-right: 30px;
-        border-bottom: 2px solid;
-        border-bottom-color: #ffffff;
+        padding: 0px 30px 30px 30px;
+        border-bottom: 2px solid #ffffff;
     }
 
     .lien-activites {
         width: 50%;
         text-align: center;
         border-top: none;
-        padding-top: 0px;
-        padding-bottom: 30px;
-        padding-left: 30px;
-        padding-right: 30px;
-        border-bottom: 2px solid;
-        border-bottom-color: #ffffff;
+        padding: 0px 30px 30px 30px;
+        border-bottom: 2px solid #ffffff;
     }
 
     .lien-hebergements:hover {
         border-top: none;
         padding-top: 0px;
-        border-bottom: 2px solid;
-        border-bottom-color:#0065FC;
+        border-bottom: 2px solid #0065FC;
         padding-bottom: 30px;
     }
 
     .lien-activites:hover {
         border-top: none;
         padding-top: 0px;
-        border-bottom: 2px solid;
-        border-bottom-color:#0065FC;
+        border-bottom: 2px solid #0065FC;
         padding-bottom: 30px;
     }
 
@@ -628,6 +609,7 @@ footer {
 
     .formulaire {
         height: 45px;
+        margin-bottom: 10px;
     }
 
     .localisation {
