@@ -146,6 +146,7 @@ ul {
     font-size: 17px;
     font-weight: 700;
     gap: 30px;
+    padding-inline-start: 40px;
 }
 
 .liste-filtres li {
@@ -451,19 +452,34 @@ footer {
         display: none;
     }
 
+    .localisation {
+        height: 40px;
+    }
+
+    .bouton-search {
+        height: 40px;
+        padding-top: 10px;
+        padding-bottom: 15px;
+    }
+    .fa-location-dot {
+        padding: 12px 15px 12px 15px;
+    }
+
     .liste-filtres {
+        justify-content: space-around;
         font-size: 14px;
         font-weight: 700;
-        gap: 15px;
-        padding-inline-start: 15px;
+        gap: 10px;
+        padding-inline-start: 20px;
+        width: 100%;
     }
 
     .liste-filtres li {
-        padding: 10px;
+        padding: 10px 14px;
     }
 
     .liste-filtres li:hover {
-        padding: 10px;
+        padding: 10px 14px;
     }
 
     .fa-money-bill-wave, .fa-dog {
@@ -483,7 +499,6 @@ footer {
     }
 
     .section-1-2 {
-        display: flex;
         flex-direction: column;
     }
 
@@ -497,7 +512,6 @@ footer {
     }
 
     .cards-populaires {
-        display: flex;
         flex-direction: row;
         min-height: 0px;
     }
@@ -513,7 +527,6 @@ footer {
     }
 
     .cards-hebergements {
-        display: flex;
         justify-content: center;
     }
 
@@ -542,6 +555,7 @@ footer {
     }
 }
 
+
 @media screen and (max-width: 767px) {
 
     body {
@@ -550,7 +564,6 @@ footer {
     }
 
     nav {
-        display:flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
@@ -613,19 +626,23 @@ footer {
     }
 
     .localisation {
-        font-size: 16px;
+        font-size: 15px;
+        height: 45px;
     }
 
     .bouton-search {
         display: none;
     }
 
+    .fa-location-dot {
+        padding: 14px;
+    }
     button {
         width: 45px;
         height: 45px;
         top: 199px;
         left: 342px;
-        padding: 16px 16px 16px 14px;
+        padding: 15px;
         background-color:#0065FC;
         border: 0px solid #0065FC;
         border-radius: 0px 15px 15px 0px;
@@ -638,7 +655,6 @@ footer {
     }
 
     .filtres {
-        display: flex;
         flex-direction: column;
         align-items:flex-start;
     }
@@ -650,18 +666,19 @@ footer {
         display: grid;
         grid-template-columns: 1fr 1fr;
         gap: 8px;
+        width: 100%;
     }
 
     .liste-filtres li {
         padding: 20px 8px 10px 8px;
-        width: 140px;
+        width: 90%;
         height: 25px;
         border-radius: 30px;
     }
 
     .liste-filtres li:hover {
         padding: 20px 8px 10px 8px;
-        width: 140px;
+        width: 90%;
         height: 25px;
         border-radius: 30px;
     }
